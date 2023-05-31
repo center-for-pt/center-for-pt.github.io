@@ -1,12 +1,24 @@
 :root {
+  --color-blue-200: #bfdbfe;
   --color-blue-300: #93c5fd;
   --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
   --color-blue-700: #1d4ed8;
   --color-blue-800: #1e40af;
+  --color-blue-900: #1e3a8a;
   --color-blue-950: #172554;
   --color-blue-50: #eff6ff;
 
+  --color-green-400: #4ade80;
+  --color-green-500: #22c55e;
+  --color-green-600: #16a34a;
+
   --color-slate-50: #f8fafc;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
 
   --color-dark: #32323c;
   --color-light: #cbd5e1;
@@ -38,6 +50,8 @@
   --layout-gap-lg: clamp(3rem,   8vmax,   4rem);
 }
 
+/* Elements */
+
 body {
   min-height: 100vh;
   display: grid;
@@ -49,26 +63,46 @@ main {
   margin: 0 auto;
 }
 
-/* Elements */
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+/* Layout */
+
+.l-cluster {
+  --gap: 1rem;
+  display: flex;
+  gap: var(--gap);
+  align-items: center;
+}
+
+/* Utilities */
+
+.u-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 /* Header */
 
 .c-header__main {
   padding: var(--padding-sm) var(--padding-md);
-  background-color: var(--color-blue-800);
-}
-.c-header__main img {
-  padding-bottom: 1rem;
+  background-color: var(--color-blue-900);
+  border-bottom: 1px solid var(--color-blue-200);
 }
 .c-header__main ul {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 }
 .c-header__main nav a {
   padding: 1rem;
@@ -78,6 +112,7 @@ ul {
 .c-header__main a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
 }
 .c-header__main a:hover {
   text-decoration: underline;
@@ -91,6 +126,7 @@ ul {
   }
   .c-header__main nav ul {
     flex-direction: row;
+    margin-top: 0;
   }
   .c-header__main nav a {
     border: none;
@@ -102,15 +138,20 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem var(--padding-md);
-  background-color: var(--color-light);
   color: var(--color-blue-950);
-  border-top: 1px solid var(--color-blue-500);
-  border-bottom: 1px solid var(--color-blue-950);
+  border-top: 1px solid var(--color-slate-400);
+  border-bottom: 2px solid var(--color-blue-950);
 }
 .c-header__sub a {
   text-decoration: none;
   color: var(--color-blue-950);
 }
+.c-header__sub a:hover {
+  text-decoration: none;
+  color: var(--color-blue-700);
+}
+
+/* Hero */
 
 .c-header__hero {
   display: grid;
@@ -118,19 +159,29 @@ ul {
   height: 60vh;
   max-height: 600px;
   place-items: center;
-  background-color: rgba(29, 78, 216, 0.5);
+  background-color: rgba(29, 78, 216, 0.25);
+  border-bottom: 1px solid var(--color-blue-500);
 }
 
 .c-header__hero > * {
   grid-area: hero;
 }
 
+.c-header__hero__content h2 {
+  margin-bottom: 3rem;
+}
+
 .c-header__hero__content {
   z-index: 1;
   text-align: center;
-  color: #fff;
+  color: var(--color-slate-50);
   min-width: 30ch;
   padding: 1rem;
+}
+
+.c-header__hero__content a {
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
 }
 
 .c-header__hero img {
@@ -178,7 +229,7 @@ section {
   color: var(--color-blue-50);
   padding: var(--padding-sm);
   background-color: var(--color-blue-950);
-  border-top: 1px solid var(--color-blue-500);
+  border-top: 3px solid var(--color-blue-600);
 }
 
 .c-footer__visit {
@@ -227,13 +278,28 @@ section {
   font-size: 0.75rem;
 }
 
-/* Layout */
+/* Buttons */
 
-.l-cluster {
-  --gap: 1rem;
-  display: flex;
-  gap: var(--gap);
-  align-items: center;
+.c-button {
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-/* Utilities */
+.c-button__success {
+  background-color: var(--color-green-400);
+  border: 1px solid var(--color-green-600);
+  color: white;
+}
+.c-button__success:hover {
+  background-color: var(--color-green-500);
+}
+
+.c-button__secondary {
+  background-color: var(--color-slate-400);
+  border: 1px solid var(--color-slate-600);
+  color: white;
+}
+.c-button__secondary:hover {
+  background-color: var(--color-slate-500);
+}

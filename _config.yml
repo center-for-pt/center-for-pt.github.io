@@ -1,3 +1,13 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Center for Physical Therapy – Orthopedic-based private physical therapy practice" # the name of your site, e.g. ACME Corp.
+instagram: https://www.instagram.com/centerforpt/
+facebook: https://www.facebook.com/CenterforPTandSM/
+google: https://goo.gl/maps/cLpMxuSqD9wpFvrh8
+review: https://goo.gl/4Erv3S
+email: info@centerforpt.net
+phone: +18047477472
+phone_display: (804) 747-7472
+fax: +18047477441
+fax_display: (804) 747-7441
+address_display: 3920 Springfield Road, Glen Allen VA, 23060

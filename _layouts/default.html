@@ -10,51 +10,58 @@
   </head>
   <body>
     <header>
+      <div class="c-header__sub">
+        <div class="l-cluster">
+          <div class="l-cluster">
+            <a href="tel:{{ site.phone }}">
+              <i class="fa-solid fa-phone"></i>
+              {{ site.phone_display }}
+            </a>
+          </div>
+        </div>
+        <div class="l-cluster">
+          <a target="_blank" href="{{ site.google }}">
+            <i class="fa-brands fa-google fa-lg"></i>
+            <span class="u-sr-only">Google</span>
+          </a>
+          <a target="_blank" href="{{ site.facebook }}">
+            <i class="fa-brands fa-facebook fa-lg"></i>
+            <span class="u-sr-only">Facebook</span>
+          </a>
+          <a target="_blank" href="{{ site.instagram}}">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+            <span class="u-sr-only">Instagram</span>
+          </a>
+        </div>
+      </div>
+
       <div class="c-header__main">
+        <h1 class="u-sr-only">Center for Phsyical Therapy and Sports Medicine</h1>
+
         <a href="">
-          <img src="https://www.centerforpt.net/wp-content/uploads/2016/07/Logo-2-web-1.jpg" />
+          <img alt="Center for Phsyical Therapy and Sports Medicine" src="https://www.centerforpt.net/wp-content/uploads/2016/07/Logo-2-web-1.jpg" />
         </a>
 
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Team</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/team">Team</a></li>
           </ul>
         </nav>
       </div>
 
-      <div class="c-header__sub">
-        <div class="l-cluster">
-          <div class="l-cluster">
-            <a href="tel:2813308004">
-              <i class="fa-solid fa-phone"></i>
-              (281) 330-8004
-            </a>
-          </div>
-        </div>
-
-        <div class="l-cluster">
-          <a href="#">
-            <i class="fa-brands fa-google fa-lg"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-facebook fa-lg"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-instagram fa-lg"></i>
-          </a>
-        </div>
-      </div>
 
       <div class="c-header__hero">
         <div class="c-header__hero__content">
           <h2>
-            A family owned and operated practice providing the Richmond Area with Physical Therapy for 20+ years.
+            A family owned practice providing the Richmond Area with Physical Therapy for 20+ years.
           </h2>
+          <a target="_blank" href="{{site.review}}" class="c-button c-button__secondary">Leave a Review</a>
+          <a class="c-button c-button__success" href="#visit">Get in Touch</a>
         </div>
-        <img src="https://www.centerforpt.net/wp-content/uploads/2016/08/iStock_43608048_LARGE.jpg" alt="">
+        <img alt="background" src="https://scontent.fosu2-1.fna.fbcdn.net/v/t39.30808-6/257950643_293148979482749_7343715755486843598_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=KYxP1r2NZR0AX-PyCkE&_nc_ht=scontent.fosu2-1.fna&oh=00_AfCgdNV4dpaooa5aDoVniACOvnwvFxGs78mSyUGbWfK8rQ&oe=647CDA5C" alt="">
       </div>
     </header>
 
@@ -62,7 +69,7 @@
       <section class="cards">
         <div class="card">
           <h3>Best in class Treatment</h3>
-          <img src="https://www.centerforpt.net/wp-content/uploads/2016/08/iStock_81528343_LARGE-e1470681237233.jpg" />
+          <img alt="best in class treatment" src="https://www.centerforpt.net/wp-content/uploads/2016/08/iStock_81528343_LARGE-e1470681237233.jpg" />
           <p>
             All of our physical therapists are licensed by the Virginia Board of Physical Therapy and are Direct Access Certified, so you do not need a referral or prescription to be evaluated or treated through our clinic.
           </p>
@@ -70,7 +77,7 @@
 
         <div class="card">
           <h3>Virginia Licensed</h3>
-          <img src="https://www.centerforpt.net/wp-content/uploads/2016/08/iStock_64837683_LARGE-e1470681351308.jpg" />
+          <img alt="virginia licensed" src="https://www.centerforpt.net/wp-content/uploads/2016/08/iStock_64837683_LARGE-e1470681351308.jpg" />
           <p>
             All of our physical therapists are licensed by the Virginia Board of Physical Therapy and are Direct Access Certified, so you do not need a referral or prescription to be evaluated or treated through our clinic.
           </p>
@@ -78,7 +85,7 @@
 
         <div class="card">
           <h3>Something Else</h3>
-          <img src="https://www.centerforpt.net/wp-content/uploads/2016/08/iStock_61378936_LARGE-1160x920.jpg">
+          <img alt="something else" src="https://www.centerforpt.net/wp-content/uploads/2016/08/iStock_61378936_LARGE-1160x920.jpg">
           <p>
             All of our physical therapists are licensed by the Virginia Board of Physical Therapy and are Direct Access Certified, so you do not need a referral or prescription to be evaluated or treated through our clinic.
           </p>
@@ -88,10 +95,10 @@
 
     <footer class="c-footer">
       <div class="c-footer__visit">
-        <h2>Visit Today</h2>
-        <a href="#">
+        <h2 id="visit">Visit Today</h2>
+        <a target="_blank" href="{{ site.google }}">
           <i class="fa-map-marker fa-solid"></i>
-          3920 Springfield Road, Glen Allen VA, 23060
+          {{ site.address_display }}
         </a>
       </div>
 
@@ -100,21 +107,21 @@
           <h3>Contact</h3>
           <ul>
             <li>
-              <a href="tel:2813308004">
+              <a href="tel:{{ site.phone }}">
                 <i class="fa-solid fa-phone"></i>
-                (281) 330-8004
+                {{ site.phone_display }}
               </a>
             </li>
             <li>
-              <a href="mailto:vinny@centerforpt.net">
+              <a href="mailto:{{ site.email }}">
                 <i class="fa-solid fa-envelope"></i>
-                vinny@centerforpt.net
+                {{ site.email }}
               </a>
             </li>
             <li>
-              <a href="tel:2813308004">
+              <a href="tel:{{ site.fax }}">
                 <i class="fa-solid fa-fax"></i>
-                (281) 330-8004
+                {{ site.fax_display }}
               </a>
             </li>
           </ul>
