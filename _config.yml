@@ -1,5 +1,5 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/website" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 title: "Center for Physical Therapy – Orthopedic-based private physical therapy practice" # the name of your site, e.g. ACME Corp.
 instagram: https://www.instagram.com/centerforpt/
 facebook: https://www.facebook.com/CenterforPTandSM/
