@@ -38,16 +38,16 @@
       <div class="c-header__main">
         <h1 class="u-sr-only">Center for Phsyical Therapy and Sports Medicine</h1>
 
-        <a href="/">
+        <a href="{{ "/" | relative_url }}">
           <img alt="Center for Phsyical Therapy and Sports Medicine" src="https://www.centerforpt.net/wp-content/uploads/2016/07/Logo-2-web-1.jpg" />
         </a>
 
         <nav>
           <ul>
-            <li><a href="{% link index.md %}">Home</a></li>
-            <li><a href="{{ "/website/services.html" | relative_url }}">Services</a></li>
-            <li><a href="{% link resources.md %}">Resources</a></li>
-            <li><a href="{% link team.md %}">Team</a></li>
+            <li><a href="{{ "/" | relative_url }}">Home</a></li>
+            <li><a href="{{ "/services.html" | relative_url }}">Services</a></li>
+            <li><a href="{{ "/resources.html" | relative_url }}">Resources</a></li>
+            <li><a href="{{ "/team.html" | relative_url }}">Team</a></li>
           </ul>
         </nav>
       </div>
