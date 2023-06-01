@@ -1,0 +1,46 @@
+
+- title: AETNA US Healthcare-all plans, including Aetna Better Health
+  accepted: true
+- title: ALLIANCE (through First Health Network or PHCS)
+  accepted: true
+- title: ANTHEM BC/BS (All products including Healthkeepers and Healthkeepers Plus)
+  accepted: true
+- title: BEECH STREET
+  accepted: true
+- title: BENESIGHT (out of network)
+  accepted: true
+- title: CCN Managed Care (Group Health & Worker’s Comp)
+  accepted: true
+- title: HUMANA/MEDICARE ADVANTAGE
+  accepted: true
+- title: CIGNA PPO & HMO (through RPN Network)
+  accepted: true
+- title: FIRST HEALTH
+  accepted: true
+- title: GREAT WEST
+  accepted: true
+- title: MEDICARE*
+  accepted: true
+- title: MEDICAID (only as a secondary insurance to MEDICARE)
+  accepted: true
+- title: OPTIMA HEALTH
+  accepted: true
+- title: PHCS (Private Health Care System)
+  accepted: true
+- title: COVENTRY
+  accepted: true
+- title: TRICARE
+  accepted: true
+- title: UNITED HEALTHCARE – All Plans
+  accepted: true
+- title: WORKERS COMP/PERSONAL INJURY
+  accepted: true
+- title: HEALTH NET FEDERAL SERVICES
+  accepted: true
+
+- title: ANTHEM CAREMORE
+  accepted: false
+- title: MAMSI HMO/OPTIMUM CHOICE
+  accepted: false
+- title: MEDICAID (as primary insurance)
+  accepted: false

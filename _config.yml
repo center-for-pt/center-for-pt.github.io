@@ -11,3 +11,7 @@ phone_display: (804) 747-7472
 fax: +18047477441
 fax_display: (804) 747-7441
 address_display: 3920 Springfield Road, Glen Allen VA, 23060
+
+collections:
+  staff_members:
+    output: true
